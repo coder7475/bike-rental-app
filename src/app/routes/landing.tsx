@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 export const LandingRoute = () => {
   return (
     <>
-      <Head description="Welcome to bulletproof react" />
+      <Head description="Cyclone - Bike Rental Website" />
       <div className="flex h-screen items-center bg-white">
         <div className="mx-auto max-w-7xl px-4 py-12 text-center sm:px-6 lg:px-8 lg:py-16">
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
