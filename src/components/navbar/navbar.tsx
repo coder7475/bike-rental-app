@@ -17,31 +17,20 @@ const Navbar = () => {
         </Link>
         <nav className="flex flex-wrap items-center justify-center text-base md:ml-4	md:mr-auto md:border-l md:border-gray-700 md:py-1 md:pl-4">
           <Link to="/" className="mr-5 hover:text-white">
-            First Link
+            Home
+          </Link>
+          <Link to="/about" className="mr-5 hover:text-white">
+            About Us
           </Link>
           <Link to="/" className="mr-5 hover:text-white">
-            Second Link
+            Services
           </Link>
           <Link to="/" className="mr-5 hover:text-white">
-            Third Link
-          </Link>
-          <Link to="/" className="mr-5 hover:text-white">
-            Fourth Link
+            Featured
           </Link>
         </nav>
         <button className="mt-4 inline-flex items-center rounded border-0 bg-gray-800 px-3 py-1 text-base hover:bg-gray-700 focus:outline-none md:mt-0">
-          Button
-          <svg
-            fill="none"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            className="ml-1 size-4"
-            viewBox="0 0 24 24"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
+          Log In
         </button>
       </div>
     </header>
