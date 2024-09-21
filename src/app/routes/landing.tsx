@@ -1,4 +1,5 @@
 import logo from '@/assets/logo.svg';
+import Footer from '@/components/footer/footer';
 import Navbar from '@/components/navbar/navbar';
 import { Head } from '@/components/seo';
 import { Button } from '@/components/ui/button';
@@ -40,6 +41,7 @@ export const LandingRoute = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
