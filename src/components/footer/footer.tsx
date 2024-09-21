@@ -1,9 +1,14 @@
+import { Link } from 'react-router-dom';
+
 const Footer = () => {
   return (
     <footer className="body-font bg-gray-900 text-gray-400">
       <div className="container mx-auto flex flex-col flex-wrap px-5 py-24 md:flex-row md:flex-nowrap md:items-center lg:items-start">
-        <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-          <a className="flex title-font font-medium items-center md:justify-start justify-center text-white">
+        <div className="mx-auto w-64 flex-shrink-0 text-center md:mx-0 md:text-left">
+          <Link
+            to="/"
+            className="flex items-center font-medium text-white md:justify-start justify-center title-font"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -11,156 +16,228 @@ const Footer = () => {
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
-              className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+              className="w-10 h-10 rounded-full bg-indigo-500 p-2 text-white"
               viewBox="0 0 24 24"
             >
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
             </svg>
-            <span className="ml-3 text-xl">Tailblocks</span>
-          </a>
+            <span className="ml-3 text-xl">Cyclone</span>
+          </Link>
           <p className="mt-2 text-sm text-gray-500">
-            Air plant banjo lyft occupy retro adaptogen indego
+            Your trusted bike rental service
           </p>
         </div>
-        <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
-              CATEGORIES
+        <div className="flex flex-grow flex-wrap -mb-10 mt-10 text-center md:mt-0 md:pl-20 md:text-left">
+          <div className="w-full px-4 md:w-1/2 lg:w-1/4">
+            <h2 className="mb-3 text-sm font-medium tracking-widest text-white title-font">
+              COMPANY
             </h2>
-            <nav className="list-none mb-10">
+            <nav className="mb-10 list-none">
               <li>
-                <a className="text-gray-400 hover:text-white">First Link</a>
+                <Link to="/about" className="text-gray-400 hover:text-white">
+                  About Us
+                </Link>
               </li>
               <li>
-                <a className="text-gray-400 hover:text-white">Second Link</a>
+                <Link to="/contact" className="text-gray-400 hover:text-white">
+                  Contact
+                </Link>
               </li>
               <li>
-                <a className="text-gray-400 hover:text-white">Third Link</a>
+                <Link to="/careers" className="text-gray-400 hover:text-white">
+                  Careers
+                </Link>
               </li>
               <li>
-                <a className="text-gray-400 hover:text-white">Fourth Link</a>
+                <Link to="/press" className="text-gray-400 hover:text-white">
+                  Press
+                </Link>
               </li>
             </nav>
           </div>
-          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
-              CATEGORIES
+          <div className="w-full px-4 md:w-1/2 lg:w-1/4">
+            <h2 className="mb-3 text-sm font-medium tracking-widest text-white title-font">
+              SERVICES
             </h2>
-            <nav className="list-none mb-10">
+            <nav className="mb-10 list-none">
               <li>
-                <a className="text-gray-400 hover:text-white">First Link</a>
+                <Link to="/rentals" className="text-gray-400 hover:text-white">
+                  Bike Rentals
+                </Link>
               </li>
               <li>
-                <a className="text-gray-400 hover:text-white">Second Link</a>
+                <Link to="/tours" className="text-gray-400 hover:text-white">
+                  Guided Tours
+                </Link>
               </li>
               <li>
-                <a className="text-gray-400 hover:text-white">Third Link</a>
+                <Link to="/repairs" className="text-gray-400 hover:text-white">
+                  Repairs
+                </Link>
               </li>
               <li>
-                <a className="text-gray-400 hover:text-white">Fourth Link</a>
+                <Link to="/events" className="text-gray-400 hover:text-white">
+                  Events
+                </Link>
               </li>
             </nav>
           </div>
-          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
-              CATEGORIES
+          <div className="w-full px-4 md:w-1/2 lg:w-1/4">
+            <h2 className="mb-3 text-sm font-medium tracking-widest text-white title-font">
+              SUPPORT
             </h2>
-            <nav className="list-none mb-10">
+            <nav className="mb-10 list-none">
               <li>
-                <a className="text-gray-400 hover:text-white">First Link</a>
+                <Link to="/faq" className="text-gray-400 hover:text-white">
+                  FAQ
+                </Link>
               </li>
               <li>
-                <a className="text-gray-400 hover:text-white">Second Link</a>
+                <Link to="/help" className="text-gray-400 hover:text-white">
+                  Help Center
+                </Link>
               </li>
               <li>
-                <a className="text-gray-400 hover:text-white">Third Link</a>
+                <Link to="/terms" className="text-gray-400 hover:text-white">
+                  Terms of Service
+                </Link>
               </li>
               <li>
-                <a className="text-gray-400 hover:text-white">Fourth Link</a>
+                <Link to="/privacy" className="text-gray-400 hover:text-white">
+                  Privacy Policy
+                </Link>
               </li>
             </nav>
           </div>
-          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
-              CATEGORIES
+          <div className="w-full px-4 md:w-1/2 lg:w-1/4">
+            <h2 className="mb-3 text-sm font-medium tracking-widest text-white title-font">
+              CONNECT
             </h2>
-            <nav className="list-none mb-10">
+            <nav className="mb-10 list-none">
               <li>
-                <a className="text-gray-400 hover:text-white">First Link</a>
+                <a
+                  href="https://facebook.com/cyclone"
+                  className="text-gray-400 hover:text-white"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Facebook
+                </a>
               </li>
               <li>
-                <a className="text-gray-400 hover:text-white">Second Link</a>
+                <a
+                  href="https://twitter.com/cyclone"
+                  className="text-gray-400 hover:text-white"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Twitter
+                </a>
               </li>
               <li>
-                <a className="text-gray-400 hover:text-white">Third Link</a>
+                <a
+                  href="https://instagram.com/cyclone"
+                  className="text-gray-400 hover:text-white"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Instagram
+                </a>
               </li>
               <li>
-                <a className="text-gray-400 hover:text-white">Fourth Link</a>
+                <a
+                  href="https://linkedin.com/company/cyclone"
+                  className="text-gray-400 hover:text-white"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn
+                </a>
               </li>
             </nav>
           </div>
         </div>
       </div>
       <div className="bg-gray-800 bg-opacity-75">
-        <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-          <p className="text-gray-400 text-sm text-center sm:text-left">
-            © 2020 Tailblocks —
+        <div className="container mx-auto flex flex-col flex-wrap px-5 py-4 sm:flex-row">
+          <p className="text-center text-sm text-gray-400 sm:text-left">
+            © 2024 Cyclone —
             <a
-              href="https://twitter.com/knyttneve"
+              href="https://cyclone.com"
               rel="noopener noreferrer"
-              className="text-gray-500 ml-1"
+              className="ml-1 text-gray-500"
               target="_blank"
             >
-              @knyttneve
+              www.cyclone.com
             </a>
           </p>
-          <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-            <a className="text-gray-400">
+          <span className="mt-2 inline-flex justify-center sm:ml-auto sm:mt-0 sm:justify-start">
+            <a
+              href="https://facebook.com/cyclone"
+              className="text-gray-400"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <svg
                 fill="currentColor"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                className="w-5 h-5"
+                className="h-5 w-5"
                 viewBox="0 0 24 24"
               >
                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
               </svg>
             </a>
-            <a className="ml-3 text-gray-400">
+            <a
+              href="https://twitter.com/cyclone"
+              className="ml-3 text-gray-400"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <svg
                 fill="currentColor"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                className="w-5 h-5"
+                className="h-5 w-5"
                 viewBox="0 0 24 24"
               >
                 <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
               </svg>
             </a>
-            <a className="ml-3 text-gray-400">
+            <a
+              href="https://instagram.com/cyclone"
+              className="ml-3 text-gray-400"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <svg
                 fill="none"
                 stroke="currentColor"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                className="w-5 h-5"
+                className="h-5 w-5"
                 viewBox="0 0 24 24"
               >
                 <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                 <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
               </svg>
             </a>
-            <a className="ml-3 text-gray-400">
+            <a
+              href="https://linkedin.com/company/cyclone"
+              className="ml-3 text-gray-400"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <svg
                 fill="currentColor"
                 stroke="currentColor"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="0"
-                className="size-5"
+                className="h-5 w-5"
                 viewBox="0 0 24 24"
               >
                 <path
