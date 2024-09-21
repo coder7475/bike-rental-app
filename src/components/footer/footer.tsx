@@ -16,7 +16,7 @@ const Footer = () => {
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
-              className="w-10 h-10 rounded-full bg-indigo-500 p-2 text-white"
+              className="size-10 rounded-full bg-indigo-500 p-2 text-white"
               viewBox="0 0 24 24"
             >
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
@@ -27,9 +27,9 @@ const Footer = () => {
             Your trusted bike rental service
           </p>
         </div>
-        <div className="flex flex-grow flex-wrap -mb-10 mt-10 text-center md:mt-0 md:pl-20 md:text-left">
+        <div className="-mb-10 mt-10 flex grow flex-wrap text-center md:mt-0 md:pl-20 md:text-left">
           <div className="w-full px-4 md:w-1/2 lg:w-1/4">
-            <h2 className="mb-3 text-sm font-medium tracking-widest text-white title-font">
+            <h2 className="mb-3 text-sm font-medium tracking-widest text-white">
               COMPANY
             </h2>
             <nav className="mb-10 list-none">
@@ -56,7 +56,7 @@ const Footer = () => {
             </nav>
           </div>
           <div className="w-full px-4 md:w-1/2 lg:w-1/4">
-            <h2 className="mb-3 text-sm font-medium tracking-widest text-white title-font">
+            <h2 className="mb-3 text-sm font-medium tracking-widest text-white">
               SERVICES
             </h2>
             <nav className="mb-10 list-none">
@@ -83,7 +83,7 @@ const Footer = () => {
             </nav>
           </div>
           <div className="w-full px-4 md:w-1/2 lg:w-1/4">
-            <h2 className="mb-3 text-sm font-medium tracking-widest text-white title-font">
+            <h2 className="mb-3 text-sm font-medium tracking-widest text-white">
               SUPPORT
             </h2>
             <nav className="mb-10 list-none">
@@ -110,7 +110,7 @@ const Footer = () => {
             </nav>
           </div>
           <div className="w-full px-4 md:w-1/2 lg:w-1/4">
-            <h2 className="mb-3 text-sm font-medium tracking-widest text-white title-font">
+            <h2 className="mb-3 text-sm font-medium tracking-widest text-white">
               CONNECT
             </h2>
             <nav className="mb-10 list-none">
@@ -158,10 +158,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-gray-800 bg-opacity-75">
+      <div className="bg-gray-800/75">
         <div className="container mx-auto flex flex-col flex-wrap px-5 py-4 sm:flex-row">
           <p className="text-center text-sm text-gray-400 sm:text-left">
-            © 2024 Cyclone —
+            © 2024 Cyclone —{' '}
             <a
               href="https://cyclone.com"
               rel="noopener noreferrer"
@@ -183,7 +183,7 @@ const Footer = () => {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                className="h-5 w-5"
+                className="size-5"
                 viewBox="0 0 24 24"
               >
                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
@@ -200,7 +200,7 @@ const Footer = () => {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                className="h-5 w-5"
+                className="size-5"
                 viewBox="0 0 24 24"
               >
                 <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
@@ -218,7 +218,7 @@ const Footer = () => {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                className="h-5 w-5"
+                className="size-5"
                 viewBox="0 0 24 24"
               >
                 <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
@@ -237,7 +237,7 @@ const Footer = () => {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="0"
-                className="h-5 w-5"
+                className="size-5"
                 viewBox="0 0 24 24"
               >
                 <path
