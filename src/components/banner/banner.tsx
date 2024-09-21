@@ -18,12 +18,7 @@ const Banner = () => {
         <p className="text-lg sm:text-xl md:text-2xl">
           Rent a bike and start your adventure today!
         </p>
-        <a
-          href="#rent"
-          className="rounded-full bg-blue-600 px-6 py-2 text-lg font-semibold transition duration-300 hover:bg-blue-700 sm:px-8 sm:py-3"
-        >
-          Rent Now
-        </a>
+
         <div className="w-full max-w-md">
           <div className="flex flex-col sm:flex-row">
             <input
@@ -33,11 +28,17 @@ const Banner = () => {
               className="w-full rounded-full border-2 border-white bg-transparent px-4 py-2 text-white placeholder:text-white sm:rounded-r-none"
               placeholder="Check availability"
             />
-            <button className="mt-2 w-full rounded-full bg-green-500 px-6 py-2 font-semibold transition duration-300 hover:bg-green-600 sm:mt-0 sm:w-auto sm:rounded-l-none">
+            <button className="mt-2 w-full rounded-full bg-card-foreground px-6 py-2 font-semibold transition duration-300 hover:bg-green-600 sm:mt-0 sm:w-auto sm:rounded-l-none">
               Search
             </button>
           </div>
         </div>
+        <a
+          href="#rent"
+          className="rounded-full bg-primary px-6 py-2 text-lg font-semibold transition duration-300 hover:bg-blue-700 sm:px-8 sm:py-3"
+        >
+          Rent Now
+        </a>
       </div>
     </div>
   );
