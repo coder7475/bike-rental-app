@@ -29,9 +29,12 @@ const Navbar = () => {
             Featured
           </Link>
         </nav>
-        <button className="mt-4 inline-flex items-center rounded border-0 bg-gray-800 px-3 py-1 text-base hover:bg-gray-700 focus:outline-none md:mt-0">
+        <a
+          href="/login"
+          className="mt-4 inline-flex items-center rounded border-0 bg-gray-800 px-3 py-1 text-base hover:bg-gray-700 focus:outline-none md:mt-0"
+        >
           Log In
-        </button>
+        </a>
       </div>
     </header>
   );
