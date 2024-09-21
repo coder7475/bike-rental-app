@@ -2,25 +2,18 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="body-font bg-gray-900 text-gray-400">
+    <footer className="bg-gray-900 text-gray-400">
       <div className="container mx-auto flex flex-col flex-wrap px-5 py-24 md:flex-row md:flex-nowrap md:items-center lg:items-start">
-        <div className="mx-auto w-64 flex-shrink-0 text-center md:mx-0 md:text-left">
+        <div className="mx-auto w-64 shrink-0 text-center md:mx-0 md:text-left">
           <Link
             to="/"
-            className="flex items-center font-medium text-white md:justify-start justify-center title-font"
+            className="flex items-center justify-center font-medium text-white md:justify-start"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              className="size-10 rounded-full bg-indigo-500 p-2 text-white"
-              viewBox="0 0 24 24"
-            >
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
+            <img
+              src="/bike.png"
+              alt="company-logo"
+              className="size-20 rounded-xl bg-card p-1"
+            />
             <span className="ml-3 text-xl">Cyclone</span>
           </Link>
           <p className="mt-2 text-sm text-gray-500">
