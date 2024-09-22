@@ -4,6 +4,7 @@ import Footer from '@/components/footer/footer';
 import Navbar from '@/components/navbar/navbar';
 import { Head } from '@/components/seo';
 import Testimonials from '@/components/testimonials/testimonials';
+import WhyChooseUs from '@/components/whychooseus/whychooseus';
 
 export const LandingRoute = () => {
   return (
@@ -13,6 +14,7 @@ export const LandingRoute = () => {
       <div className="flex h-screen items-center bg-white">
         <Banner />
       </div>
+      <WhyChooseUs />
       <FeaturedBikes />
       <Testimonials />
       <Footer />
