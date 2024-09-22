@@ -3,6 +3,7 @@ import FeaturedBikes from '@/components/featured/featured';
 import Footer from '@/components/footer/footer';
 import Navbar from '@/components/navbar/navbar';
 import { Head } from '@/components/seo';
+import Testimonials from '@/components/testimonials/testimonials';
 
 export const LandingRoute = () => {
   return (
@@ -13,6 +14,7 @@ export const LandingRoute = () => {
         <Banner />
       </div>
       <FeaturedBikes />
+      <Testimonials />
       <Footer />
     </>
   );
