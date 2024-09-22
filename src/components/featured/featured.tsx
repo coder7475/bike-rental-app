@@ -35,22 +35,22 @@ const bikes = [
 ];
 const FeaturedBikes = () => {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
+    <section className="w-full bg-gray-100 py-12 md:py-24 lg:py-32">
       <div className="container px-4 md:px-6">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12">
+        <h2 className="mb-12 text-center text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
           Featured Bikes
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {bikes.map((bike) => (
             <Card key={bike.id} className="flex flex-col">
               <CardHeader>
                 <CardTitle className="text-xl">{bike.brand}</CardTitle>
               </CardHeader>
-              <CardContent className="flex-grow">
+              <CardContent className="grow">
                 <img
                   src={bike.image}
                   alt={`${bike.brand} ${bike.model}`}
-                  className="w-full h-48 object-cover rounded-md mb-4"
+                  className="mb-4 h-48 w-full rounded-md object-cover"
                 />
                 <p className="text-gray-600">{bike.model}</p>
               </CardContent>
