@@ -11,8 +11,8 @@ export const LandingRoute = () => {
       <Head description="Cyclone - Bike Rental Website" />
       <div className="flex h-screen items-center bg-white">
         <Banner />
-        <FeaturedBikes />
       </div>
+      <FeaturedBikes />
       <Footer />
     </>
   );
