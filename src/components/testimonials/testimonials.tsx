@@ -38,16 +38,16 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-green-50">
+    <section className="w-full bg-green-50 py-12 md:py-24 lg:py-32">
       <div className="container px-4 md:px-6">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12">
+        <h2 className="mb-12 text-center text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
           What Our Riders Say
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {testimonials.map((testimonial) => (
             <Card key={testimonial.id} className="bg-white">
               <CardContent className="p-6">
-                <div className="flex items-center space-x-4 mb-4">
+                <div className="mb-4 flex items-center space-x-4">
                   <Avatar>
                     <AvatarImage
                       src={testimonial.avatar}
@@ -67,8 +67,8 @@ export default function Testimonials() {
                     <p className="text-sm text-gray-600">{testimonial.role}</p>
                   </div>
                 </div>
-                <blockquote className="text-gray-700 italic">
-                  "{testimonial.quote}"
+                <blockquote className="text-gray-700">
+                  &quot;{testimonial?.quote}&quot;
                 </blockquote>
               </CardContent>
             </Card>
