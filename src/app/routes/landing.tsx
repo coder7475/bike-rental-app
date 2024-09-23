@@ -1,4 +1,5 @@
 import Banner from '@/components/banner/banner';
+import ContactUs from '@/components/contact/contact';
 import FeaturedBikes from '@/components/featured/featured';
 import Footer from '@/components/footer/footer';
 import Navbar from '@/components/navbar/navbar';
@@ -17,6 +18,7 @@ export const LandingRoute = () => {
       <WhyChooseUs />
       <FeaturedBikes />
       <Testimonials />
+      <ContactUs />
       <Footer />
     </>
   );
