@@ -23,16 +23,18 @@ const Banner = () => {
 
         <div className="w-full max-w-md">
           <div className="flex flex-col sm:flex-row">
-            <input
-              type="date"
-              value={searchDate}
-              onChange={(e) => setSearchDate(e.target.value)}
-              className="w-full rounded-full border-2 border-white bg-transparent px-4 py-2 text-white placeholder:text-white sm:rounded-r-none"
-              placeholder="Check availability"
-            />
-            <button className="mt-2 w-full rounded-full bg-card-foreground px-4 py-2 font-semibold transition duration-300 hover:bg-primary sm:mt-0 sm:w-auto sm:rounded-l-none">
-              Search
-            </button>
+            <div className="flex w-full">
+              <input
+                type="date"
+                value={searchDate}
+                onChange={(e) => setSearchDate(e.target.value)}
+                className="w-full rounded-l-full border-2 border-white bg-transparent px-4 py-2 text-white placeholder:text-white"
+                placeholder="Check availability"
+              />
+              <button className="w-auto rounded-r-full bg-card-foreground px-4 py-3 font-semibold transition duration-300 hover:bg-primary">
+                Search
+              </button>
+            </div>
           </div>
         </div>
         <a
