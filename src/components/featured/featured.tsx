@@ -35,7 +35,7 @@ const bikes = [
 ];
 const FeaturedBikes = () => {
   return (
-    <section className="w-full bg-gray-100 py-12 md:py-24 lg:py-32">
+    <section className="w-full bg-gray-100 py-12 md:py-24 lg:py-32" id="rent">
       <div className="container px-4 md:px-6">
         <h2 className="mb-12 text-center text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
           Featured Bikes
