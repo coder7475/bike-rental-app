@@ -5,7 +5,7 @@ const Banner = () => {
 
   return (
     <div className="relative size-full">
-      {/* Backgrond Image  */}
+      {/* Background Image  */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: "url('/bike-banner.jpg')" }}
@@ -30,8 +30,12 @@ const Banner = () => {
                 onChange={(e) => setSearchDate(e.target.value)}
                 className="w-full rounded-l-full border-2 border-white bg-transparent px-4 py-2 text-white placeholder:text-white"
                 placeholder="Check availability"
+                aria-label="Select date for availability check"
               />
-              <button className="w-auto rounded-r-full bg-card-foreground px-4 py-3 font-semibold transition duration-300 hover:bg-primary">
+              <button
+                className="w-auto rounded-r-full bg-card-foreground px-4 py-3 font-semibold transition duration-300 hover:bg-primary"
+                aria-label="Search for availability"
+              >
                 Search
               </button>
             </div>
